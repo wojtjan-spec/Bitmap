@@ -15,5 +15,9 @@ int main() {
 
     image.Export("image.bmp");
 
+    Image copy(0, 0);
+    copy.Read("image.bmp");
+    copy.Export("copy.bmp");
+
     return 0;
 }
